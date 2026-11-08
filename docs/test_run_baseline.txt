@@ -1,0 +1,28 @@
+test_121_minutes_is_unavailable (test_booking.TestCanBook.test_121_minutes_is_unavailable) ... ok
+test_blocked_room_rejects (test_booking.TestCanBook.test_blocked_room_rejects) ... ok
+test_empty_existing_list (test_booking.TestCanBook.test_empty_existing_list) ... ok
+test_end_after_1440_is_unavailable (test_booking.TestCanBook.test_end_after_1440_is_unavailable) ... ok
+test_end_at_1440_is_available (test_booking.TestCanBook.test_end_at_1440_is_available) ... ok
+test_exactly_120_minutes_is_available (test_booking.TestCanBook.test_exactly_120_minutes_is_available) ... ok
+test_fully_covering_existing_is_unavailable (test_booking.TestCanBook.test_fully_covering_existing_is_unavailable) ... ok
+test_fully_inside_existing_is_unavailable (test_booking.TestCanBook.test_fully_inside_existing_is_unavailable) ... ok
+test_gap_between_two_bookings_is_available (test_booking.TestCanBook.test_gap_between_two_bookings_is_available) ... ok
+test_inputs_not_mutated (test_booking.TestCanBook.test_inputs_not_mutated) ... ok
+test_negative_start_is_unavailable (test_booking.TestCanBook.test_negative_start_is_unavailable) ... ok
+test_non_integer_inputs_rejected (test_booking.TestCanBook.test_non_integer_inputs_rejected) ... ok
+test_overlap_is_unavailable (test_booking.TestCanBook.test_overlap_is_unavailable) ... ok
+test_overlap_with_second_booking_is_unavailable (test_booking.TestCanBook.test_overlap_with_second_booking_is_unavailable) ... ok
+test_reversed_times (test_booking.TestCanBook.test_reversed_times) ... ok
+test_start_equals_end (test_booking.TestCanBook.test_start_equals_end) ... ok
+test_start_zero_with_now_zero_is_unavailable (test_booking.TestCanBook.test_start_zero_with_now_zero_is_unavailable) ... ok
+test_starts_before_now_is_unavailable (test_booking.TestCanBook.test_starts_before_now_is_unavailable) ... ok
+test_starts_now_is_unavailable (test_booking.TestCanBook.test_starts_now_is_unavailable) ... ok
+test_starts_one_minute_after_now_is_available (test_booking.TestCanBook.test_starts_one_minute_after_now_is_available) ... ok
+test_touching_end_is_available (test_booking.TestCanBook.test_touching_end_is_available) ... ok
+test_touching_start_is_available (test_booking.TestCanBook.test_touching_start_is_available) ... ok
+test_unsorted_existing_bookings (test_booking.TestCanBook.test_unsorted_existing_bookings) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 0.000s
+
+OK

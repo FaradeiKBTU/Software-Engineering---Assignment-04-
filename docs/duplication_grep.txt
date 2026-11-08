@@ -1,0 +1,11 @@
+baseline/roomChecker.js:7:  if (!(0 <= start && start < end && end <= 1440))
+baseline/roomChecker.js:8:    return { ok: false, msg: "Times must be 0-1440 and start before end" };
+baseline/roomChecker.js:10:  if (end - start > 120) return { ok: false, msg: "Maximum length is 120 minutes" };
+baseline/roomChecker.js:12:    if (start < e && s < end) return { ok: false, msg: "Overlaps an existing booking" };
+baseline/index.html:4:<p>Bookings: 10:00-11:00, 15:00-16:00. Maximum length is 120 minutes. Allowed range 00:00-24:00.</p>
+baseline/booking.py:11:    if not (0 <= start < end <= 1440):
+baseline/booking.py:15:    if end - start > 120:
+baseline/booking.py:18:        if start < booked_end and booked_start < end:
+src/smart_campus/rules.py:4:MINUTES_PER_DAY = 1440
+src/smart_campus/rules.py:5:MAX_LENGTH = 120
+src/smart_campus/rules.py:22:    return start < booked_end and booked_start < end

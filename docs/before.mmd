@@ -1,0 +1,12 @@
+flowchart LR
+  subgraph PY["Python (A3)"]
+    B["booking.py<br/>can_book -> bool<br/>6 rule checks + 2 constants"]
+    T["test_booking.py<br/>23 tests"]
+  end
+  subgraph WEB["Bolt.new web app (A3)"]
+    J["roomChecker.ts<br/>canBook -> status + reason<br/>8 checks + 2 constants<br/>room name 'Sunset Lounge' in messages"]
+    U["RoomChecker.tsx<br/>UI, parsing (not provided)"]
+  end
+  T --> B
+  U --> J
+  B -. "same rules written twice" .- J

@@ -1,0 +1,53 @@
+test_121_minutes_is_unavailable (tests.test_a3_regression.TestCanBook.test_121_minutes_is_unavailable) ... ok
+test_blocked_room_rejects (tests.test_a3_regression.TestCanBook.test_blocked_room_rejects) ... ok
+test_empty_existing_list (tests.test_a3_regression.TestCanBook.test_empty_existing_list) ... ok
+test_end_after_1440_is_unavailable (tests.test_a3_regression.TestCanBook.test_end_after_1440_is_unavailable) ... ok
+test_end_at_1440_is_available (tests.test_a3_regression.TestCanBook.test_end_at_1440_is_available) ... ok
+test_exactly_120_minutes_is_available (tests.test_a3_regression.TestCanBook.test_exactly_120_minutes_is_available) ... ok
+test_fully_covering_existing_is_unavailable (tests.test_a3_regression.TestCanBook.test_fully_covering_existing_is_unavailable) ... ok
+test_fully_inside_existing_is_unavailable (tests.test_a3_regression.TestCanBook.test_fully_inside_existing_is_unavailable) ... ok
+test_gap_between_two_bookings_is_available (tests.test_a3_regression.TestCanBook.test_gap_between_two_bookings_is_available) ... ok
+test_inputs_not_mutated (tests.test_a3_regression.TestCanBook.test_inputs_not_mutated) ... ok
+test_negative_start_is_unavailable (tests.test_a3_regression.TestCanBook.test_negative_start_is_unavailable) ... ok
+test_non_integer_inputs_rejected (tests.test_a3_regression.TestCanBook.test_non_integer_inputs_rejected) ... ok
+test_overlap_is_unavailable (tests.test_a3_regression.TestCanBook.test_overlap_is_unavailable) ... ok
+test_overlap_with_second_booking_is_unavailable (tests.test_a3_regression.TestCanBook.test_overlap_with_second_booking_is_unavailable) ... ok
+test_reversed_times (tests.test_a3_regression.TestCanBook.test_reversed_times) ... ok
+test_start_equals_end (tests.test_a3_regression.TestCanBook.test_start_equals_end) ... ok
+test_start_zero_with_now_zero_is_unavailable (tests.test_a3_regression.TestCanBook.test_start_zero_with_now_zero_is_unavailable) ... ok
+test_starts_before_now_is_unavailable (tests.test_a3_regression.TestCanBook.test_starts_before_now_is_unavailable) ... ok
+test_starts_now_is_unavailable (tests.test_a3_regression.TestCanBook.test_starts_now_is_unavailable) ... ok
+test_starts_one_minute_after_now_is_available (tests.test_a3_regression.TestCanBook.test_starts_one_minute_after_now_is_available) ... ok
+test_touching_end_is_available (tests.test_a3_regression.TestCanBook.test_touching_end_is_available) ... ok
+test_touching_start_is_available (tests.test_a3_regression.TestCanBook.test_touching_start_is_available) ... ok
+test_unsorted_existing_bookings (tests.test_a3_regression.TestCanBook.test_unsorted_existing_bookings) ... ok
+test_catalog_has_at_least_four_rooms (tests.test_filtering.FilterTests.test_catalog_has_at_least_four_rooms) ... ok
+test_f1_capacity_exactly_equal_matches_but_one_more_does_not (tests.test_filtering.FilterTests.test_f1_capacity_exactly_equal_matches_but_one_more_does_not) ... ok
+test_f2_requires_all_selected_equipment (tests.test_filtering.FilterTests.test_f2_requires_all_selected_equipment) ... ok
+test_f3_blocked_room_is_never_available (tests.test_filtering.FilterTests.test_f3_blocked_room_is_never_available) ... ok
+test_f4_empty_result_for_impossible_filters (tests.test_filtering.FilterTests.test_f4_empty_result_for_impossible_filters) ... ok
+test_no_filters_returns_whole_catalog (tests.test_filtering.FilterTests.test_no_filters_returns_whole_catalog) ... ok
+test_empty_state_over_http (tests.test_http_ui.HttpTests.test_empty_state_over_http) ... ok
+test_filter_then_check_flow (tests.test_http_ui.HttpTests.test_filter_then_check_flow) ... ok
+test_page_is_served_and_is_responsive (tests.test_http_ui.HttpTests.test_page_is_served_and_is_responsive) ... ok
+test_switching_rooms_changes_result (tests.test_http_ui.HttpTests.test_switching_rooms_changes_result) ... ok
+test_ac1_reversed_and_day_bounds (tests.test_rules.RuleTests.test_ac1_reversed_and_day_bounds) ... ok
+test_ac1_start_equal_now_rejected (tests.test_rules.RuleTests.test_ac1_start_equal_now_rejected) ... ok
+test_ac2_boundary_120_vs_121 (tests.test_rules.RuleTests.test_ac2_boundary_120_vs_121) ... ok
+test_ac3_blocked_rejects_everything (tests.test_rules.RuleTests.test_ac3_blocked_rejects_everything) ... ok
+test_ac4_real_overlap_and_later_booking (tests.test_rules.RuleTests.test_ac4_real_overlap_and_later_booking) ... ok
+test_ac4_touching_is_not_overlap (tests.test_rules.RuleTests.test_ac4_touching_is_not_overlap) ... ok
+test_ac5_bookings_not_mutated (tests.test_rules.RuleTests.test_ac5_bookings_not_mutated) ... ok
+test_non_integer_inputs_return_false (tests.test_rules.RuleTests.test_non_integer_inputs_return_false) ... ok
+test_bad_text_gives_friendly_message (tests.test_service.ServiceTests.test_bad_text_gives_friendly_message) ... ok
+test_blocked_room_rejected_via_service (tests.test_service.ServiceTests.test_blocked_room_rejected_via_service) ... ok
+test_f5_each_room_uses_only_its_own_bookings (tests.test_service.ServiceTests.test_f5_each_room_uses_only_its_own_bookings) ... ok
+test_f5_same_time_different_result_per_room (tests.test_service.ServiceTests.test_f5_same_time_different_result_per_room) ... ok
+test_search_capacity_and_empty_state (tests.test_service.ServiceTests.test_search_capacity_and_empty_state) ... ok
+test_strict_parser_rejects_tricky_text (tests.test_service.ServiceTests.test_strict_parser_rejects_tricky_text) ... ok
+test_unknown_room (tests.test_service.ServiceTests.test_unknown_room) ... ok
+
+----------------------------------------------------------------------
+Ran 48 tests in 0.535s
+
+OK

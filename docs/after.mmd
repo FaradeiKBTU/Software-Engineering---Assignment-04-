@@ -1,0 +1,8 @@
+flowchart TB
+  UI["static/ app.js, index.html, style.css<br/>UI only"] -->|HTTP JSON| SRV["server.py<br/>routing only"]
+  SRV --> SVC["service.py<br/>parsing + orchestration"]
+  SVC --> FIL["filtering.py<br/>F1-F4"]
+  SVC --> RUL["rules.py<br/>AC1-AC5 (single source)"]
+  SVC --> MSG["messages.py<br/>wording"]
+  SVC --> DATA["rooms_data.py + models.py<br/>5 rooms, immutable"]
+  FIL --> DATA

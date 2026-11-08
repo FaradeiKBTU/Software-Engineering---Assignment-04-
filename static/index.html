@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Smart Campus Rooms</title><link rel="stylesheet" href="style.css"></head>
+<body><main>
+<h1>Smart Campus Room Checker</h1>
+<p class="muted" id="nowline"></p>
+
+<section aria-labelledby="f-h"><h2 id="f-h">1. Find a room</h2>
+  <label for="participants">Participants</label>
+  <input id="participants" inputmode="numeric" placeholder="e.g. 12">
+  <fieldset><legend>Required equipment</legend><div id="equipment"></div></fieldset>
+  <p id="search-error" class="error" role="alert"></p>
+  <ul id="rooms" class="rooms"></ul>
+  <p id="empty" class="empty" hidden>No rooms match these filters. Try fewer participants or less equipment.</p>
+</section>
+
+<section aria-labelledby="c-h"><h2 id="c-h">2. Check a time</h2>
+  <p>Selected room: <strong id="selected">none</strong></p>
+  <ul id="bookings" class="muted"></ul>
+  <div class="row">
+    <div><label for="start">Start (minutes)</label><input id="start" inputmode="numeric" placeholder="660"></div>
+    <div><label for="end">End (minutes)</label><input id="end" inputmode="numeric" placeholder="720"></div>
+  </div>
+  <button id="check">Check availability</button>
+  <p id="result" class="result" role="status"></p>
+</section>
+</main><script src="app.js"></script></body></html>

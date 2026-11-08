@@ -1,0 +1,15 @@
+:root{--bg:#fff;--fg:#1d2433;--muted:#5b6475;--line:#d5dae3;--ok:#146c43;--okbg:#e3f6ec;--bad:#a12622;--badbg:#fdeceb;--acc:#2447b8}
+@media(prefers-color-scheme:dark){:root{--bg:#141821;--fg:#e8ebf2;--muted:#a3abbb;--line:#323a4b;--ok:#6fdca4;--okbg:#14301f;--bad:#ff9b94;--badbg:#3a1a19;--acc:#8aa4ff}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.45 system-ui,sans-serif}
+main{max-width:640px;margin:0 auto;padding:16px}h1{font-size:1.4rem}h2{font-size:1.1rem;margin-top:1.5rem}
+label,legend{display:block;font-weight:600;margin:.6rem 0 .2rem}
+input[type=text],input:not([type]){width:100%;padding:.6rem;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--fg);font:inherit}
+fieldset{border:1px solid var(--line);border-radius:6px}#equipment label{display:inline-block;font-weight:400;margin:.2rem .8rem .2rem 0}
+.rooms{list-style:none;padding:0}.rooms li{border:1px solid var(--line);border-radius:8px;padding:.6rem;margin:.5rem 0}
+.rooms li.sel{border-color:var(--acc);box-shadow:0 0 0 2px var(--acc)}.rooms button{margin-top:.4rem}
+.tag{font-size:.8rem;padding:.1rem .5rem;border-radius:99px}.tag.available{background:var(--okbg);color:var(--ok)}.tag.blocked{background:var(--badbg);color:var(--bad)}
+.row{display:flex;gap:.8rem;flex-wrap:wrap}.row>div{flex:1 1 140px}
+button{padding:.6rem 1rem;border:1px solid var(--acc);background:var(--acc);color:#fff;border-radius:6px;font:inherit;cursor:pointer}
+.rooms button{background:transparent;color:var(--acc)}
+.muted{color:var(--muted)}.error{color:var(--bad)}.empty{padding:.8rem;border:1px dashed var(--line);border-radius:8px}
+.result{margin-top:1rem;padding:.8rem;border-radius:8px;min-height:1.2em}.result.ok{background:var(--okbg);color:var(--ok)}.result.bad{background:var(--badbg);color:var(--bad)}
