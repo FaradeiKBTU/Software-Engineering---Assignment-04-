@@ -8,13 +8,11 @@
 
 ## Exchanges
 
-| # | Key prompt (summary) | AI output used | Problems found | Change made | How I checked |
-|---|---|---|---|---|---|
-| 1 | Sent the Assignment #04 PDF and asked "what must I do" | Summary of the 6 tasks, deliverables, e-mail subject rule, deadline | none | none | compared with the PDF |
-| 2 | Sent my A3 report, then my real `booking.py`, `test_booking.py` and Bolt `roomChecker.ts` | Analysis of the real files, risks R1-R5, plan | an earlier draft assumed a reconstructed baseline with literals repeated in page text; the real files already use named constants, so the metric was redone | baseline replaced by my originals, metrics recounted | ran my 23 A3 tests (23/23), ran `roomChecker.ts` on key cases with Node 22 (results matched) |
-| 3 | Build catalog + filters, split into modules, keep AC1-AC5 | `src/smart_campus/*`, `static/*` | first filter design hid blocked rooms | blocked rooms shown with status "blocked" (F3) | read the code, ran tests, opened the page at 360 px |
-| 4 | Write 10+ tests incl. boundaries and one integration test; reuse my A3 tests | 25 new tests + my 23 A3 tests rerun on the new rules = 48 | 2 tests failed on first run because of wrong F5 test data (570-630 overlaps Sunset 600-660) | test interval changed to 560-590; code untouched | rerun: 48/48 OK, log in `docs/test_run_final.txt` |
-| 5 | Measure duplication and structure | counts of rule implementations and constants | stray literals (1440 in a message, `540 + 60` in data) in my own first code | replaced with `rules.MINUTES_PER_DAY` and plain numbers | recounted by reading and grep: 12 -> 6 rule implementations, 4 -> 2 constants |
+| 1 | I sent Claude Sonnet 5.5 the Assignment #04 PDF and asked what I must do. | Claude summarised the 6 tasks, the deliverables, the e-mail subject rule and the deadline. | None found. | None. | I compared the summary with the PDF. |
+| 2 | I sent my Assignment #03 report (AC1-AC6, function contract, issue log), then my real files booking.py, test_booking.py and the Bolt.new roomChecker.ts, and told Claude the constraints: one page, fictional data, no login or database, and the old rules must keep their exact meaning. | Claude analysed my real files and produced the risks R1-R5 and a refactoring plan. | An earlier draft assumed a reconstructed baseline; my real files already use named constants, so the duplication metric had to be redone. | I replaced the baseline with my original files and the metrics were recounted. | I ran my 23 A3 tests (23/23) and ran roomChecker.ts on key cases with Node 22 (results matched). |
+| 3 | I asked Claude to build the room catalog and filters, split the code into modules and keep AC1-AC5 unchanged. | The code in src/smart_campus/* and static/*. | The first filter design hid blocked rooms. | Blocked rooms are now shown with status "blocked" (F3). | I read the code, ran the tests and opened the page at 360 px width. |
+| 4 | I asked for at least 10 tests with boundary cases and one integration test, and to reuse my A3 tests. | 25 new tests, plus my 23 A3 tests run against the new rules, 48 in total. | 2 new tests failed on the first run because of wrong test data (570-630 overlaps the Sunset Lounge booking 600-660). | I changed the test interval to 560-590; the code was not changed. | I reran the suite: 48/48 OK, log in docs/test_run_final.txt. |
+| 5 | I asked for the measurements: duplication and module structure. | Counts of rule implementations and constants, and a file listing. | Stray literals in the first version of the new code (1440 in a message, 540 + 60 in data). | Replaced with rules.MINUTES_PER_DAY and plain numbers. | I recounted: 12 to 6 rule implementations, 4 to 2 constant definitions. |
 
 ## Commands run (real)
 ```
